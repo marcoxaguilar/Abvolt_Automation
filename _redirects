@@ -1,0 +1,48 @@
+# Static HTML routing — each page is its own crawlable file
+/services              /services.html              200
+/service-areas         /service-areas.html         200
+/blog                  /blog.html                  200
+/about                 /about.html                 200
+/contact               /contact.html               200
+
+# Service detail pages
+/services/smart-home-automation        /services/smart-home-automation.html        200
+/services/home-security-surveillance   /services/home-security-surveillance.html   200
+/services/lighting-control-systems     /services/lighting-control-systems.html     200
+/services/whole-home-audio             /services/whole-home-audio.html             200
+/services/home-theater-installation    /services/home-theater-installation.html    200
+/services/access-control-systems       /services/access-control-systems.html       200
+/services/structured-cabling-networking /services/structured-cabling-networking.html 200
+/services/ev-charger-installation      /services/ev-charger-installation.html      200
+/services/commercial-automation        /services/commercial-automation.html        200
+/services/data-center-services         /services/data-center-services.html         200
+/services/fiber-optic-solutions        /services/fiber-optic-solutions.html        200
+/services/tv-mounting-installation     /services/tv-mounting-installation.html     200
+
+# Service area pages
+/service-areas/lake-forest-il    /service-areas/lake-forest-il.html    200
+/service-areas/winnetka-il       /service-areas/winnetka-il.html       200
+/service-areas/highland-park-il  /service-areas/highland-park-il.html  200
+/service-areas/glencoe-il        /service-areas/glencoe-il.html        200
+/service-areas/lake-bluff-il     /service-areas/lake-bluff-il.html     200
+/service-areas/northbrook-il     /service-areas/northbrook-il.html     200
+/service-areas/glenview-il       /service-areas/glenview-il.html       200
+
+# Blog posts
+/blog/data-center-infrastructure-guide   /blog/data-center-infrastructure-guide.html   200
+/blog/smart-home-guide-lake-forest       /blog/smart-home-guide-lake-forest.html       200
+/blog/security-systems-luxury-homes      /blog/security-systems-luxury-homes.html      200
+/blog/structured-wiring-estates          /blog/structured-wiring-estates.html          200
+/blog/ev-charger-north-shore             /blog/ev-charger-north-shore.html             200
+/blog/lighting-automation-estates        /blog/lighting-automation-estates.html        200
+/blog/whole-home-audio-design            /blog/whole-home-audio-design.html            200
+/blog/home-theater-north-shore           /blog/home-theater-north-shore.html           200
+/blog/access-control-luxury              /blog/access-control-luxury.html              200
+/blog/pre-wiring-builders-checklist      /blog/pre-wiring-builders-checklist.html      200
+/blog/comed-ev-rebate-2026-guide         /blog/comed-ev-rebate-2026-guide.html         200
+/blog/tv-mounting-guide-north-shore      /blog/tv-mounting-guide-north-shore.html      200
+/blog/smart-intercom-access-control-2026 /blog/smart-intercom-access-control-2026.html 200
+/blog/smart-home-trends-north-shore-2026  /blog/smart-home-trends-north-shore-2026.html  200
+
+# Fallback — homepage for any unmatched routes
+/*    /index.html   200
