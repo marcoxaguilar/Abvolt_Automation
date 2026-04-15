@@ -221,6 +221,7 @@ nav.sc{background:rgba(10,11,13,.98);box-shadow:0 1px 30px rgba(0,0,0,.15)}
 
 /* HERO — stays dark, the dramatic opening moment */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--hero)}
+@media(max-width:768px){.hero{min-height:auto;padding:2rem 0}}
 .hbg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80&auto=format');background-size:cover;background-position:center 40%;opacity:.3}
 .hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,11,13,.88) 0%,rgba(10,11,13,.45) 40%,rgba(10,11,13,.65) 100%)}
 .hbg::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,11,13,1) 0%,transparent 35%),linear-gradient(to right,rgba(10,11,13,.92) 0%,transparent 55%)}
@@ -720,14 +721,13 @@ function Home({go}){const nav=(e,p)=>{e.preventDefault();go(p)};return <>
   <section className="hero cbg"><div className="hbg"/><Circ/>
     <div className="ctr" style={{position:'relative',zIndex:2,paddingTop:'5rem',paddingBottom:'4rem'}}>
       <div className="hc">
-        <div className="htl">North Shore's Premier Smart Home Integrator</div>
-        <h1>Precision <span className="acc">Power</span> for Intelligent Homes</h1>
-        <p className="sub">Bespoke smart home automation, security, and low-voltage integration crafted for discerning homeowners across Lake Forest, Winnetka, Highland Park, and Chicago's North Shore.</p>
-        <div className="hbtns"><a className="btn ba" href="/contact" onClick={(e)=>nav(e,'contact')}>Schedule a Consultation</a><a className="btn bo" href="/services" onClick={(e)=>nav(e,'services')}>Explore Services</a></div>
-        <div className="hst"><div><div className="hsn">12</div><div className="hsl">Specialized Services</div></div><div><div className="hsn">7</div><div className="hsl">North Shore Communities</div></div><div><div className="hsn">24/7</div><div className="hsl">Support & Monitoring</div></div></div>
+        <div className="htl">Electrical & Smart Solutions</div>
+        <h1>We Wire It. We Connect It. <span className="acc">We Make It Smart.</span></h1>
+        <p className="sub">Security cameras, lighting, audio, networking, EV chargers, and more — installed right and set up so everything just works.</p>
+        <div className="hbtns"><a className="btn ba" href="/contact" onClick={(e)=>nav(e,'contact')}>Get a Free Quote</a><a className="btn bo" href="/services" onClick={(e)=>nav(e,'services')}>See What We Do</a></div>
+        <div className="hst"><div><div className="hsn">12+</div><div className="hsl">Services We Offer</div></div><div><div className="hsn">7</div><div className="hsl">Communities Served</div></div><div><div className="hsn">24/7</div><div className="hsl">Support & Monitoring</div></div></div>
       </div>
     </div>
-    <div className="eln" style={{top:'20%',left:'10%',width:'15%'}}/><div className="eln" style={{top:'60%',right:'5%',width:'12%'}}/><div className="eld" style={{top:'25%',left:'25%'}}/><div className="eld" style={{top:'45%',right:'20%',animationDelay:'1s'}}/><div className="eld" style={{bottom:'30%',left:'45%',animationDelay:'2s'}}/>
   </section>
 
   <section className="pbar" style={{background:'var(--bk)'}} aria-label="Authorized dealer and installer partnerships"><div className="ctr">
@@ -740,12 +740,12 @@ function Home({go}){const nav=(e,p)=>{e.preventDefault();go(p)};return <>
   </div></section>
 
   <section className="sec sd cbg"><div className="ctr">
-    <div className="stag">Our Expertise</div><h2 className="stit">COMPREHENSIVE LOW-VOLTAGE SOLUTIONS</h2><p className="ssub">From intelligent automation to robust security, every system engineered to elevate your lifestyle.</p>
+    <div className="stag">What We Do</div><h2 className="stit">ELECTRICAL & SMART SOLUTIONS</h2><p className="ssub">From wiring and lighting to cameras, audio, and full smart home setups — we handle it all.</p>
     <div className="sg">{SVCS.map(s=><a className="sc2" key={s.id} href={"/services/"+s.id} onClick={(e)=>nav(e,'s:'+s.id)} style={{textDecoration:'none'}}><div className="si">{I[s.ic]}</div><h3>{s.t}</h3><p>{s.sh}</p><span className="sl">Learn More →</span></a>)}</div>
   </div></section>
 
   <section className="sec" style={{background:'var(--bk)'}}><div className="ctr">
-    <div className="stag">Why Abvolt</div><h2 className="stit">CRAFTSMANSHIP MEETS TECHNOLOGY</h2><p className="ssub">We engineer bespoke experiences with the precision North Shore homeowners demand.</p>
+    <div className="stag">Why Abvolt</div><h2 className="stit">WHY PEOPLE CHOOSE US</h2><p className="ssub">Licensed, insured, and built on doing the job right the first time.</p>
     <div className="wg"><div className="wc"><div className="wn">100%</div><div className="wl">Licensed &amp; Insured</div></div><div className="wc"><div className="wn">7</div><div className="wl">Communities Served</div></div><div className="wc"><div className="wn">24/7</div><div className="wl">Support &amp; Monitoring</div></div><div className="wc"><div className="wn">5★</div><div className="wl">Client Satisfaction</div></div></div>
   </div></section>
 
