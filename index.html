@@ -292,9 +292,10 @@ nav.sc{background:rgba(10,11,13,.98);box-shadow:0 1px 30px rgba(0,0,0,.15)}
 .pbl{display:flex;align-items:center;justify-content:center;gap:3.5rem;flex-wrap:wrap}
 .pbl img,.pbl a{display:inline-flex;align-items:center}
 .pbl img{height:56px;width:auto;opacity:.75;filter:grayscale(100%);transition:all .4s;object-fit:contain}
+.pbl img[src*="bbb"]{height:80px}
 .pbl img:hover{opacity:1;filter:grayscale(0%)}
 .pbl a:hover img{opacity:1;filter:grayscale(0%)}
-@media(max-width:640px){.pbl{gap:2rem}.pbl img{height:44px}}
+@media(max-width:640px){.pbl{gap:2rem}.pbl img{height:44px}.pbl img[src*="bbb"]{height:64px}}
 
 /* BLOG */
 .bg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
