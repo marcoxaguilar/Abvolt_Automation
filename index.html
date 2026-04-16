@@ -290,9 +290,11 @@ nav.sc{background:rgba(10,11,13,.98);box-shadow:0 1px 30px rgba(0,0,0,.15)}
 .pbar{padding:3rem 0;border-top:1px solid rgba(26,27,31,.06);border-bottom:1px solid rgba(26,27,31,.06)}
 .pbar .stag{justify-content:center;margin-bottom:1.5rem}
 .pbl{display:flex;align-items:center;justify-content:center;gap:3.5rem;flex-wrap:wrap}
-.pbl img{height:36px;opacity:.45;filter:grayscale(100%);transition:all .4s;object-fit:contain}
-.pbl img:hover{opacity:.85;filter:grayscale(0%)}
-@media(max-width:640px){.pbl{gap:2rem}.pbl img{height:28px}}
+.pbl img,.pbl a{display:inline-flex;align-items:center}
+.pbl img{height:56px;width:auto;opacity:.75;filter:grayscale(100%);transition:all .4s;object-fit:contain}
+.pbl img:hover{opacity:1;filter:grayscale(0%)}
+.pbl a:hover img{opacity:1;filter:grayscale(0%)}
+@media(max-width:640px){.pbl{gap:2rem}.pbl img{height:44px}}
 
 /* BLOG */
 .bg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
@@ -749,10 +751,10 @@ function Home({go}){const nav=(e,p)=>{e.preventDefault();go(p)};return <>
   <section className="pbar" style={{background:'var(--bk)'}} aria-label="Authorized dealer and installer partnerships"><div className="ctr">
     <div className="stag" style={{justifyContent:'center'}}>Authorized Dealer & Accredited Partner</div>
     <div className="pbl">
-      <a href="https://www.bbb.org/us/il/lake-bluff/profile/lighting-systems/abvolt-automation-0654-1000127698" target="_blank" rel="noopener noreferrer" aria-label="View Abvolt Automation's BBB Accredited Business profile"><img src="/partner-bbb.png" alt="BBB Accredited Business" title="BBB Accredited Business — View Profile" loading="lazy" width="120" height="36" style={{objectFit:'contain'}}/></a>
-      <img src="/partner-butterflymx.jpg" alt="ButterflyMX Authorized Dealer — Smart Intercom & Access Control Installation" title="ButterflyMX" loading="lazy" width="160" height="36"/>
-      <img src="/partner-ring.png" alt="Ring Authorized Installer — Video Doorbell & Security Camera Installation" title="Ring" loading="lazy" width="100" height="36"/>
-      <img src="/partner-xfinity.png" alt="Xfinity Authorized Dealer — Internet & Home Security Installation" title="Xfinity" loading="lazy" width="120" height="36"/>
+      <a href="https://www.bbb.org/us/il/lake-bluff/profile/lighting-systems/abvolt-automation-0654-1000127698" target="_blank" rel="noopener noreferrer" aria-label="View Abvolt Automation's BBB Accredited Business profile"><img src="/partner-bbb.png" alt="BBB Accredited Business" title="BBB Accredited Business — View Profile" loading="lazy"/></a>
+      <img src="/partner-butterflymx.jpg" alt="ButterflyMX Authorized Dealer — Smart Intercom & Access Control Installation" title="ButterflyMX" loading="lazy"/>
+      <img src="/partner-ring.png" alt="Ring Authorized Installer — Video Doorbell & Security Camera Installation" title="Ring" loading="lazy"/>
+      <img src="/partner-xfinity.png" alt="Xfinity Authorized Dealer — Internet & Home Security Installation" title="Xfinity" loading="lazy"/>
     </div>
   </div></section>
 
